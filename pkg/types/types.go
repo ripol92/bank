@@ -23,13 +23,16 @@ type Card struct {
 	MinBalance Money
 }
 
-type Payment struct {
-	ID int
-	Amount Money
-}
-
 type PaymentSource struct {
 	Type string
 	Number string
 	Balance Money
+}
+
+type Category string
+
+type Payment struct {
+	ID int
+	Amount Money
+	Category Category
 }
