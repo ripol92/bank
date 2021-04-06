@@ -31,8 +31,11 @@ type PaymentSource struct {
 
 type Category string
 
+type Status string
+
 type Payment struct {
 	ID int
 	Amount Money
 	Category Category
+	Status Statusg
 }
