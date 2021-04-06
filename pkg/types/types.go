@@ -33,6 +33,12 @@ type Category string
 
 type Status string
 
+const (
+	StatusOk = "OK"
+	StatusFail = "FAIL"
+	StatusInProgress = "INPROGRESS"
+)
+
 type Payment struct {
 	ID int
 	Amount Money
